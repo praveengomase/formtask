@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Job Application</title>
+    </head>
+    <body>
+        <center>
+        <h1 style="color: aqua;">
+            Software Developer Job Application
+        </h1>
+    </center>
+        <form action="submit_form" method="post">
+            <fieldset style="background-color: lightslategray;"><legend>Personal Information</legend>
+<label for="FirtName:">FirstName:</label>
+                <input type="text" value="" required><br><br>
+<label for="Email:">Email:</label>
+                <input type="text" value="" required><br><br>
+                <label for="Phone Number:">Phone Number:</label>
+                <input type="text" value="" required><br><br>
+            </fieldset><br><br>
+            <fieldset  style="background-color: lightslategray;"><legend>Job Details</legend>
+                <label for="Position applied for:">Position applied for:</label>
+                <input type="Software developer" value="" placeholder="Software developer"><br><br>
+                <label for="Year of experince:"> Year of experince:</label>
+                <input type="number" value="" required><br><br>
+                <label for="Technical Skills">Technical Skills:</label>
+                <input list="Courses" name="Courses">
+                <datalist id="Courses">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JAVA SCRIPT">JAVA SCRIPT</option>
+                </datalist>
+                </select><br><br>
+                <label for="preffered location:">preffered location:</label>
+                <select id="place" name="place">
+                    <option value="remote">remote</option>
+                    <option value="hyderabad">hyderabad</option>
+                    <option value="mumbai">mumbai</option>
+                </select><br><br>
+                <label for="upload resume:">upload resume:</label>
+                <input type="file" id="resume" name="resume"><br><br>
+            </fieldset><br>
+            <input type="submit" value="submit Application" placeholder="submit Application">
+        </form>
+    </body>
+</html>
